@@ -2,9 +2,9 @@ package home.application.week2taskshop;
 
 import home.application.week2taskshop.service.Shop;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
-@Service
+@Component
 public class ShopMainApplication {
 
     private Shop shop;
