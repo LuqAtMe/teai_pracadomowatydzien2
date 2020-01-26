@@ -3,7 +3,6 @@ package home.application.week2taskshop.model;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 @Component
@@ -16,7 +15,7 @@ public class Basket {
     // == constructor ==
     public Basket() {
         this.shoppingList = new ArrayList<Article>();
-        for (int i = 1; i<=5; i++){
+        for (int i = 1; i <= 5; i++) {
             ArticleNames articleNames = new ArticleNames();
             int index = random.nextInt(articleNames.getArticlesNames().size());
             Article article = new Article(articleNames.getArticlesNames().get(index), randomPrice());
@@ -32,8 +31,8 @@ public class Basket {
         return random.nextInt(highestPrice - lowestPrice) + lowestPrice;
     }
 
-    public List<Article> getBasket() {
-        return this.shoppingList;
+    public ArrayList<Article> getShoppingList() {
+        return shoppingList;
     }
 
 }

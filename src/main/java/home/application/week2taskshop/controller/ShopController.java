@@ -24,7 +24,7 @@ public class ShopController {
 // == method for console display
 
     public void getStartInfo() {
-        System.out.println(basket.getBasket().toString());
+        System.out.println(basket.getShoppingList());
     }
 
     public void getPlusInfo() {
@@ -43,8 +43,8 @@ public class ShopController {
 
     private double grossCalculation() {
         double grossPrice = 0;
-        for (int i = 0; i < basket.getBasket().size(); i++) {
-            grossPrice += basket.getBasket().get(i).getPrice();
+        for (int i = 0; i < basket.getShoppingList().size(); i++) {
+            grossPrice += basket.getShoppingList().get(i).getPrice();
         }
         return grossPrice;
     }

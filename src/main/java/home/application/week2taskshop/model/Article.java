@@ -31,6 +31,6 @@ public class Article {
         return "Article {" +
                 "name='" + name + '\'' +
                 ", price=" + price +
-                '}'+"\n";
+                '}';
     }
 }
