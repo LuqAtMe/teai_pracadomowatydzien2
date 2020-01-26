@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Profile("Plus")
 @Component
-public class ShopPlus implements Shop{
+public class ShopPlus implements Shop {
 
     ShopController shopController;
 

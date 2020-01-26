@@ -3,11 +3,9 @@ package home.application.week2taskshop.controller;
 import home.application.week2taskshop.model.Basket;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties(prefix = "page-info")
 public class ShopController {
 
     private Basket basket;
@@ -23,7 +21,7 @@ public class ShopController {
     @Value("${shop-info.discountValue}")
     private double discountValue; //discount Value
 
-    // == method for console display
+// == method for console display
 
     public void getStartInfo() {
         System.out.println(basket.getBasket().toString());

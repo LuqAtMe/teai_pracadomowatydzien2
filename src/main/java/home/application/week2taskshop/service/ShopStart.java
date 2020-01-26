@@ -16,7 +16,6 @@ public class ShopStart implements Shop{
         this.shopController = shopController;
     }
 
-
     @Override
     public void getInfo() {
         shopController.getStartInfo();
